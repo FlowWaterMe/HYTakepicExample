@@ -7,9 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import "ViewController.h"
+extern ViewController * m_viewcontroller;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+//   ViewController * m_viewcontroller;
+}
+//   ViewController * m_viewcontroller;
 
+-(void)attachview:(ViewController *)view;
 
 @end
 

@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FC8A9E220464E9C00245350 /* cropview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC8A9E120464E9C00245350 /* cropview.m */; };
 		6FE7AB632028467F001F97C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7AB622028467F001F97C0 /* AppDelegate.m */; };
 		6FE7AB662028467F001F97C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7AB652028467F001F97C0 /* main.m */; };
 		6FE7AB692028467F001F97C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE7AB682028467F001F97C0 /* ViewController.m */; };
 		6FE7AB6B2028467F001F97C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7AB6A2028467F001F97C0 /* Assets.xcassets */; };
 		6FE7AB6E2028467F001F97C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE7AB6C2028467F001F97C0 /* Main.storyboard */; };
+		6FE7AB9220284F7C001F97C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7AB9120284F7C001F97C0 /* AVFoundation.framework */; };
+		6FE7AB972029405E001F97C0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7AB962029405E001F97C0 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6FC8A9E020464E9C00245350 /* cropview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cropview.h; sourceTree = "<group>"; };
+		6FC8A9E120464E9C00245350 /* cropview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cropview.m; sourceTree = "<group>"; };
 		6FE7AB5E2028467E001F97C0 /* HYPassWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYPassWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE7AB612028467E001F97C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6FE7AB622028467F001F97C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +29,8 @@
 		6FE7AB6A2028467F001F97C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FE7AB6D2028467F001F97C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FE7AB6F2028467F001F97C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FE7AB9120284F7C001F97C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6FE7AB962029405E001F97C0 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE7AB972029405E001F97C0 /* CoreImage.framework in Frameworks */,
+				6FE7AB9220284F7C001F97C0 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				6FE7AB602028467E001F97C0 /* HYPassWord */,
 				6FE7AB5F2028467E001F97C0 /* Products */,
+				6FE7AB9020284F7C001F97C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,8 @@
 				6FE7AB6C2028467F001F97C0 /* Main.storyboard */,
 				6FE7AB6F2028467F001F97C0 /* Info.plist */,
 				6FE7AB642028467F001F97C0 /* Supporting Files */,
+				6FC8A9E020464E9C00245350 /* cropview.h */,
+				6FC8A9E120464E9C00245350 /* cropview.m */,
 			);
 			path = HYPassWord;
 			sourceTree = "<group>";
@@ -74,6 +86,15 @@
 				6FE7AB652028467F001F97C0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FE7AB9020284F7C001F97C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FE7AB962029405E001F97C0 /* CoreImage.framework */,
+				6FE7AB9120284F7C001F97C0 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC8A9E220464E9C00245350 /* cropview.m in Sources */,
 				6FE7AB692028467F001F97C0 /* ViewController.m in Sources */,
 				6FE7AB662028467F001F97C0 /* main.m in Sources */,
 				6FE7AB632028467F001F97C0 /* AppDelegate.m in Sources */,
@@ -298,6 +320,7 @@
 				6FE7AB742028467F001F97C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
